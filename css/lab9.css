@@ -1,233 +1,47 @@
+body {
+    background-color: SlateGrey;
+   
+}
 
-body{
-    background-color: black;
-}
-.lab9{
-    display:grid;
-    grid-row-gap:0px;
-    background:SlateGrey;
-}
-.one{
-    display:grid;
-        grid-template-columns:400px 800px;
-        grid-row-gap:0px;
-        background:LightSlateGray;
-        border-radius:200px;
-        padding: 0px 10px;
-        border: 100px solid;
-        border-width: thin;
-        margin-top: 50px;
-}
-.two{
-    display:grid;
-    grid-template-columns:400px 800px;
-    grid-row-gap:0px;
-    background:LightSlateGray;
-    border-radius:200px;
+#lab9 {
     padding: 0px 10px;
     border: 100px solid;
-    margin-top: 50px;
     border-width: thin;
-}
-.three{
-    display:grid;
-    grid-template-columns:400px 800px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 100px;
     grid-row-gap:0px;
     background:LightSlateGray;
-    border-radius:200px;
-    padding: 0px 10px;
-    border: 100px solid;
-    margin-top: 50px;
-    border-width: thin;
+      
 }
-.four{
-    display:grid;
-    grid-template-columns:400px 800px;
-    grid-row-gap:0px;
-    background:LightSlateGray;
-    border-radius:200px;
-    padding: 0px 10px;
-    border: 100px solid;
-    margin-top: 50px;
-    border-width: thin;
+
+.card {
+    margin-top: 40px;
+    color:white;
+    display: block;
+    font-size:50px;
+   text-align: center;
+    margin-bottom: 100px;
 }
-.five{
-    display:grid;
-    grid-template-columns:400px 800px;
-    grid-row-gap:0px;
-    background:LightSlateGray;
-    border-radius:200px;
-    padding: 0px 10px;
-    border: 100px solid;
+
+.container {
     margin-top: 50px;
-    border-width: thin;
+    font-size:50px;
 }
-.six{
-    display:grid;
-    grid-template-columns:400px 800px;
-    grid-row-gap:0px;
-    background:LightSlateGray;
-    border-radius:200px;
-    padding: 0px 10px;
-    border: 100px solid;
-    margin-top: 50px;
-    border-width: thin;
-}
-.seven{
-    display:grid;
-    grid-template-columns:400px 800px;
-    grid-row-gap:0px;
-    background:LightSlateGray;
-    border-radius:200px;
-    padding: 0px 10px;
-    border: 100px solid;
-    margin-top: 50px;
-    border-width: thin;
-}
-.first{
-grid-template-rows:300px;
-grid-row-gap:0px;
-display:grid;
-color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
 
 
-}
-.first2{
-    grid-template-rows:300px;
-    grid-row-gap:0px;
-    display:grid;
+h4 {
+    text-shadow: black 1px 0 10px;
+    margin-top: -40px;
     color:white; 
     font-size:50px;
     text-align: center;
-}
-.second{
-  
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
-}
-.second2{
-  
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-text-align: center;
-}
-.third{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
    
 }
-.third2{
-    grid-template-rows:300px;
-    display:grid;
+i{
     color:white;
-    text-align:right;
+    text-shadow: 1px 1px 2px black;
     font-size:50px;
-    text-align: center;
-}
-
-.fours{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
-   
-}
-.fours2
-
-{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    text-align: center;
-}
-.fives{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
-    
-}
-.fives2
-{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    text-align: center;
-}
-.sixs{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
-    
-}
-.sixs2
-{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    text-align: center;
-}
-.sevens
-{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    color:white;
-display: block;
-font-size:50px;
-margin-left: 100px;
-    
-}
-.sevens2
-{
-    grid-template-rows:300px;
-    display:grid;
-    color:white;
-    text-align:right;
-    font-size:50px;
-    text-align: center;
+    text-align: center; 
 }

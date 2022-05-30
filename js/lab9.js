@@ -11,6 +11,7 @@ fetch(`${baseUrl}/dogs`)
         card.innerHTML += `<img src="${baseUrl}${dog.dogImage}" alt="Dog" width="300" height="300">
         <div class="container">
             <h4><b>${dog.title}</b></h4>
+            <p> sex: ${dog.sex} , age: ${dog.age}</p>
             <i>${dog.description}</i>
         </div>`
         container.appendChild(card);

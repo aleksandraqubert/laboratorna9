@@ -16,10 +16,203 @@
 </head>
 
 <body>
-    <div id="lab9">
-    </div>
-    <script src="js/lab9.js">
-    </script>
+ 
+   
+        <div id="oned">
+            <p class="first">
+          <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p1.jpeg" alt="Dog1" width="300" height="300" >
+            </p>
+            <p class="first2">
+             Monty
+             <br>
+    
+             <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+    
+            </p>
+         </div>
+         <div id="two">
+            <p class="second">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p2.jpeg" alt="Dog2" width="300" height="300" >
+
+            </p>
+            <p class="second2">
+                Jubilee
+               <br>
+              
+               <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+            </p>
+         </div>
+         <div class="three">
+            <p class="third">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p3.jpeg" alt="Dog3" width="300" height="300" >
+
+            </p>
+            <p class="third2">
+                Beezy
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="four">
+            <p class="fours">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p4.jpeg" width="300" height="300" >
+
+            </p>
+            <p class="fours2">
+                Mochi
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="five">
+            <p class="fives">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p5.jpeg" alt="Dog5" width="300" height="300" >
+
+            </p>
+            <p class="fives2">
+
+                Brewery
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+       
+         <div class="six">
+            <p class="sixs">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p6.jpeg" alt="Dog6" width="300" height="300" >
+
+            </p>
+            <p class="sixs2">
+                Lucy
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p7.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Astro
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p8.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Boo
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p9.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Pippa
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p10.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Coco
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p11.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Brody
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+         <div class="seven">
+            <p class="sevens">
+                <img src="https://usersdogs-ip4weamexa-ew.a.run.app/images/dog/p12.jpeg" alt="Dog7" width="300" height="300" >
+
+            </p>
+            <p class="sevens2">
+                Stella
+                <br>
+                <div onclick="tets_assign()" class="button_hola"><span>Click here</span></div>
+             </p>
+         </div>
+
+
+         <script>
+function getData(one) {
+            
+            const baseUrl = "https://usersdogs-ip4weamexa-ew.a.run.app";
+
+
+
+fetch(`${baseUrl}/dogs`)
+.then(result => result.json())
+.then(dogs => {
+    const container = document.getElementById("lab9");
+
+    dogs.forEach(dog => {
+        const card = document.createElement("div");
+        if(dog.id==one){
+            
+        card.setAttribute("class", "card");
+        card.innerHTML += `<img src="${baseUrl}${dog.dogImage}" alt="Dog" width="300" height="300">
+        <div class="container">
+            <h4><b>${dog.title}</b></h4>
+            <p> sex: ${dog.sex} , age: ${dog.age}</p>
+            <i>${dog.description}</i>
+        </div>`
+        container.appendChild(card);}
+    });
+})
+.catch(err => console.error(err));
+        }  
+ // при нажатию на кнопку
+ document.querySelector('#get').addEventListener('click', () => {
+          getData(1);
+        });
+        //кнопка работает только один раз
+        window.onload = function() {
+    document.getElementById("get").onclick = function() {
+       this.disabled = 'disabled';
+    }}
+
+
+    document.querySelector('#get2').addEventListener('click', () => {
+          getData(2);
+        });
+        //кнопка работает только один раз
+        window.onload = function() {
+    document.getElementById("get2").onclick = function() {
+       this.disabled = 'disabled';
+    }}
+
+          
+              function tets_assign()
+              {
+                  document.location.assign("file:///C:/Users/Alexandraqubert/Desktop/2%20%D0%BA%D1%83%D1%80%D1%81/GitHub/laboratorna9/wone.html")
+              }
+          </script>
+
+
+    
 </body>
 
 </html>
